@@ -2,7 +2,7 @@ local castAt, lastW, LastWard = 0,0,0
 local ward
 
 function OnWndMsg(msg, key)
-	if key == string.byte("D") and msg == KEY_DOWN and GetTickCount() > LastWard + 3000 then
+	if key == string.byte("3") and msg == KEY_DOWN and GetTickCount() > LastWard + 3000 then
 		local slot = GetWardSlot()
 		if slot and myHero:GetSpellData(_W).name ~= "blindmonkwtwo" then
 			if GetDistance(mousePos) <= 600 then
